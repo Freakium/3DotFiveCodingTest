@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ross Chan - 3DotFive Code Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script src="functions.js"></script>
+</head>
+<body onload="init()">
+	<div class="wrapper">
+		<div class="header">
+			Firebase Login/Data Test
+			<div class="header_right"><button onClick="userSignOut()">Sign Out</button></div>
+		</div>
+		<div class="content">
+			<div class="login_disabled">
+				<h1>Screen 3</h1>
+				<form method="post" onsubmit="return editHandler(this);">
+					<table width="100%" cellpadding="5">
+						<tr>
+							<td align="right" width="25%"><b>Text 1:</b></td><td><input type="text" id="text1" class="input" readonly /></td>
+						</tr>
+						<tr>
+							<td align="right"><b>Text 2:</b></td><td><input type="text" id="text2" class="input" readonly /></td>
+						</tr>
+					</table>
+				<div class="submit_container"><input type="submit" id="submit" value="Edit" /></div>
+				</form>
+				<div id="warning"></div>
+			</div>
+		</div>
+		<div class="footer">Ross Chan - 3DotFive Code Test</div>
+	</div>
+</body>
+</html>

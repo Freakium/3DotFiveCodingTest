@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ross Chan - 3DotFive Code Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script src="functions.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">Firebase Login/Data Test</div>
+		<div class="content">
+			<div class="login">
+				<h1>Screen 1</h1>
+				<form method="post" onsubmit="return loginHandler(this);">
+					<div class="text_fields"><input type="text" id="email" placeholder="Email" class="input" autofocus /></div>
+					<div class="text_fields"><input type="password" id="password" placeholder="Password" class="input" /></div>
+					<div class="submit_container"><input type="submit" id="submit" value="Sign In" /></div>
+				</form>
+				<div id="warning"></div>
+			</div>
+		</div>
+		<div class="footer">Ross Chan - 3DotFive Code Test</div>
+	</div>
+</body>
+</html>

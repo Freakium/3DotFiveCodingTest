@@ -3,8 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ross Chan - 3DotFive Code Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="functions.js"></script>
 </head>
 <body onload="init()">
@@ -16,15 +20,15 @@
 		<div class="content">
 			<div class="login_disabled">
 				<h1>Screen 3</h1>
-				<form method="post" onsubmit="return editHandler(this);">
-					<table width="100%" cellpadding="5">
-						<tr>
-							<td align="right" width="25%"><b>Text 1:</b></td><td><input type="text" id="text1" class="input" readonly /></td>
-						</tr>
-						<tr>
-							<td align="right"><b>Text 2:</b></td><td><input type="text" id="text2" class="input" readonly /></td>
-						</tr>
-					</table>
+				<form method="post" class='form-horizontal' onsubmit="return editHandler(this);">
+					<div class="row">
+						<div class="col-sm-4"><b>Text 1:</b></div>
+						<div class="col-sm-8"><input type="text" id="text1" class="input" readonly /></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4"><b>Text 2:</b></div>
+						<div class="col-sm-8"><input type="text" id="text2" class="input" readonly /></div>
+					</div>
 				<div class="submit_container"><input type="submit" id="submit" value="Edit" /></div>
 				</form>
 				<div id="warning"></div>
